@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato:ital,wght@0,400;1,700&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    display: block;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    position: relative;
+    background-color: rgba(26, 30, 35, 0.85)
+}
+
+.image-header {
+    background-size: auto;
+    backdrop-filter: blur(12px);
+    filter: brightness(45%);
+    width: 100%;
+    height: 45rem;
+}
+
+.title-header {
+    font-size: 5rem;
+    position: absolute;
+    color: #0d6efd;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 50%;
+    text-align: center;
+}
+
+.complement-header {
+    display: block;
+    font-size: 50px;
+    position: relative;
+    font-size: 3rem;
+    position: absolute;
+    color: #A8FE39;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-item:hover {
+    background-color: #324958;
+    color: #fff;
+}
+
+.nav-link {
+    background-color: black;
+}
+
+a.nav-link {
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: black;
+}
+
+a.nav-link:hover {
+    color: #ffffff;
+}
+
+.bio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "info-container about-container"
+      "info-container about-container"
+      "info-container about-container";
+}
+  
+.info-container { 
+    display: grid;
+    grid-area: info-container;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.about-container {
+    grid-area: about-container;
+    font-family: 'Roboto';
+}
+
+.image-bio {
+    border-radius: 50% 50%;
+    margin: 1.25rem 0.75rem;
+}
+
+.info-item, .info-tech {
+    list-style: none;
+    margin-bottom: 0.4rem;
+    font-family: 'Roboto';
+}
+
+.info-list {
+    padding: 0;
+    margin: 0;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem 0 1.5rem 1.25rem;
+}
+
+.img-resume-emp {
+    border: 1px solid black;
+    width: 15%;
+    height: 50%;
+    margin: 2rem 1.5rem;
+}
+
+.tecnology-items {
+    display: flex;
+    justify-content: end;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 3rem 2rem 1rem 1rem;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    font-size: 1rem;
+}
+  
+.flip-card-front {
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+  
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-title {
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 2rem;
+    padding: 0;
+}
+
+.card-sector {
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+}
+
+.card-descrip {
+    font-family: 'Roboto';
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em 1em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "info-container about-container";
+    margin-bottom: 20px;
+}
+
+.title-form {
+    padding-bottom: 10px;
+}
+
+main {
+    padding-top: 10px;
+}
+
+h2 {
+    padding-left: 20px;
+    font-family: 'Fira Sans';
+    margin: 0.75rem 0 0 0;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    float: center;
+}
+
+.nav-bar {
+    background-color: lightgray;
+}
+
+.nav-link {
+    color: black;
+}
+
+form {
+    height: auto;
+    border-radius: 10px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px;
+    font-family: 'Roboto';
+}
+
+.inputContainer {
+    background-color: #fbfbfb; 
+    width: 95%; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #0d6efd; 
+    margin-top: 2px;  
+    padding-left: 10px;
+    margin-bottom: 2px; 
+}
+
+iframe {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#enviar {
+    margin-top: 15px;
+    width: 95%;
+    position: relative;
+    height: 40px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: lightgray;
+    height: 62px;
+}
+
+.footer-name {
+    font-family: 'Fira Sans';
+    text-align: center;
+    padding: 5px 0px;
+    margin: 0 0 0 75px;
+}
+
+.footer-icons {
+    padding: 5px 0px;
+    margin: 0 75px 0 0;
+    right: 10%;
+}
+
+.form-input-error {
+    display: none;
+    margin-bottom: 0;
+    font-size: 10px;
+    color: red;
+}
+
+.form-input-error-activo {
+    display: block;
+}
+
+.form-error-input {
+    border-color: red;
+}
+
+.form-label {
+    margin: 15px 0 5px 0;
+}
+
+#pComentError {
+    margin-bottom: 20px;
+}
+
+.alert {
+    display: none;
+}
+
+@media only screen and (min-width : 768px) and (max-width:1199px) {
+    
+    .about-container {
+        width: 85%;
+    }
+
+    .experience-container {
+        margin: 0 1.5rem 0.75rem 0;
+    }
+
+    .flip-card {
+        margin: 1rem 0 0.5rem;
+        width: 260px;
+        height: 275px;
+    }
+
+    .image-bio {
+        height: 350px;
+    }
+
+    .footer-container {
+        height: 82px;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width : 767px) {
+    
+    .title-header {
+        font-size: 3.5rem;
+    }
+
+    .complement-header {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+       
+    .bio-container {
+        min-width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 5px;
+    }
+
+    .image-bio {
+        height: 250px;
+    }
+
+    .contact-container {
+        display: block;
+    }
+
+    iframe {
+        margin-top: 10px;
+        height: 250px;
+    }
+
+    .footer-name {
+        padding: 5px 0px;
+        margin-left: 15px;
+    }
+    
+    .footer-icons {
+        position: absolute;
+        margin: 0 25px 0 0;
+    }
+
+    .footer-container {
+        height: 100px;
+    }
+}
